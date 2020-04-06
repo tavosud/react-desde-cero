@@ -47,7 +47,7 @@ const App = () => (
 
 <div className="ed-grid m-grid-3">
   {
-    cursos.map( c => <Curso title={c.title} image={c.image} profesor={c.profesor} price={c.price} /> )
+    cursos.map( (c, index) => <Curso key={index} title={c.title} image={c.image} profesor={c.profesor} price={c.price} /> )
   }
 </div>
 </>
